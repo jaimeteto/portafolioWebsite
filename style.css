@@ -1,0 +1,46 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: #1c0c0c;
+    
+    
+}
+
+
+main {
+    padding: 30px;
+    display: flex;
+    align-items: start;
+}
+
+main img {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10%; /* Optional: Add border-radius for a circular image */
+}
+main h1 {
+    text-align: center;
+    margin-right: 10px;
+    
+    color: #fff;
+}
+.container {
+
+    padding: 10px 80%;
+    
+}
+
+nav {
+    
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
