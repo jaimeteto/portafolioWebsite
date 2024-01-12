@@ -2,45 +2,110 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
-    background-color: #1c0c0c;
+    background-image: url('images/rm222batch5-mind-03.jpg'); /* Replace with your image file path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
     
     
 }
 
 
-main {
-    padding: 30px;
+.containerMain{
+    padding: 5%;
     display: flex;
     align-items: start;
+    font-size: 100% ;
 }
 
 main img {
-    width: 30%;
+    width: 50%;
     height: auto;
     margin: 0 auto;
     border-radius: 10%; /* Optional: Add border-radius for a circular image */
 }
 main h1 {
-    text-align: center;
-    margin-right: 10px;
+    text-align:start;
+    font-family:'Shadows Into Light',Arial;
+    margin-left: 20%;
+    color: #161515;
+}
+
+main p {
+
+    font-family:'Shadows Into Light';
+    margin-left: 10%;
+    margin-top: 3%;
+    color: #161515;
     
-    color: #fff;
 }
 .container {
-
-    padding: 10px 80%;
+    
+    padding-right: 10%;
+    
+    
     
 }
 
 nav {
-    
-    align-items: center;
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    float: right;
+
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row; /* Ensures horizontal alignment */
+}
+
+
+nav ul li {
+
+    display: inline-block;
+    list-style: none;
+    margin: 20px 10px;
+}
+
+nav ul li a {
+
+    color: #312727;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::before{
+    content: "";
+    position:absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background:linear-gradient(to right, #65d555, #3205e7, #a80808);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-in-out;
+
     
 
 }
+
+nav ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+.col-2-main{
+
+    padding: 5%;
+}
+
