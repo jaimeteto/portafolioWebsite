@@ -9,9 +9,10 @@
   href="https://fonts.googleapis.com/css?family=Shadows+Into+Light">
   <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine">
+    
 
 
-">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -22,34 +23,132 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#projectlist">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         </div>
     
     <main>
-
-        <div class ="containerMain">
-            <div class = "col-2-main">
-                <h1>Jaime Peña</h1>
-                <p>I'm an aspiring software engineer driven by a strong work ethic, a strong belief in making customers' needs the top priority and  a deep commitment  to continuous learning.</p>
+        <section id="home" >
+            <div class ="containerMain">
+                <div class = "col-2-main">
+                    <h1 data-aos="flip-up" data-aos-duration="1000">Jaime Peña</h1>
+                    <p>I'm an aspiring software engineer driven by a strong work ethic, a strong belief in making customers' needs the top priority and  a deep commitment  to continuous learning.</p>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="myPicture">
+                    <img src="images/jaime.PNG" alt="Jaime's Picture" >
+                </div>
+                
+                
             </div>
-            <div class="col-1-main">
-                <img src="images/jaime.PNG" alt="Jaime's Picture" >
-            </div>
-            
-            
-        </div>
+        </section>
         
 
         
         
     </main>
+    <section id = about>
+        <div class="about-container">
+            <div class = "about">
+                <div data-aos="fade-down" data-aos-duration="1000"><h1>About</h1></div>
+                <div data-aos="fade-up" class="about-paragraph"><p>
+                    I am a first-generation college student from El Salvador who is pursuing his dream of becoming a software engineer and make his family proud. I currently work full time at a collision repair shop, where I specialize in painting cars. Despite Excelling in this field, my passion lies in the ever-evolving field of software engineering where I aspire to replicate the success I've achieved in my previous career. I am deeply fascinated by all aspects of the technology industry and am fully committed to bridging the gap between my current role and my aspirations in software development.   
+                </p></div>
+                
+            </div>
+        </div>
+        <div class="titles_container">
+            <div data-aos="fade-down" data-aos-duration="1000" class="titles">
+                <p class="tab_links active-link" onclick="dislplayTab('education')">Education</p>
+                <p class="tab_links"onclick="dislplayTab('skills')">Skills</p>
+                <p class="tab_links"onclick="dislplayTab('development')">Professional Development</p>
+
+            </div>
+            <div data-aos="fade-up" class="tab-contents active" id="education">
+                <ul>
+                    <li><span>BS Computer Science</span><br>George Mason University(Decemeber 2023)</li>
+                    <li><span>MS Software Engineering</span><br>George Mason University(May 2025)</li>
+                </ul>
+
+            </div>
+            <div data-aos="fade-up" class="tab-contents" id="skills">
+                <ul>
+                    <li><span>Programming Languages</span><br>(JavaScript,python,Java,SQL)</li>
+                    <li><span>Frameworks and Libraries</span><br>Node.js, React.js,Firebase,Android Studio</li>
+                    <li><span>DataBases</span><br>SQL</li>
+                    <li><span>Frameworks and Libraries</span><br>Node.js, React.js</li>
+                    
+                </ul>
+
+            </div>
+            <div data-aos="fade-up" class="tab-contents" id="development">
+                <ul>
+                    <li><span>CodePath</span><br>George Mason University(Decemeber 2023)</li>
+                    <li><span>Fall 2023 GMU Hackthon</span><br>George Mason University(May 2025)</li>
+                </ul>
+
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="projectlist">
+        <div class="projectsSection" div data-aos="fade-down" data-aos-duration="1000">
+            <div><h1>PROJECTS</h1></div>
+            <div class="projectList">
+                <div data-aos="fade-right"class="layer">
+                    <div class="work1">
+                    </div>
+                    <h3>Wordle APP</h3>
+                    <p>Word puzzle game implemented for android phones </p>
+                </div>
+            <a href="./recipebot/recipebot.html"style="text-decoration: none; color: white;">
+                <div data-aos="fade-left" class="layer">
+                    <div class="work2">
+                    </div>
+                    <h3>Recipe Discord Bot</h3>
+                    <p>Discord bot that scrapes recipes from the web and responds with a recipe in seconds. implemented using python</p>
+                </div>
+            </a>
+                <div data-aos="fade-right" class="layer">
+                    <div class="work3">
+                    </div>
+                    <h3>Connect Four Python Game</h3>
+                    <p>Connect four game implemented using python and MinMax algorithm with Alpha-Beta pruning </p>
+                </div>
+                
+
+            </div>
+        
+        </div>
+    </section>
+    
+
+    
 
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved.</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        var tab_links = document.getElementsByClassName("tab_links")
+        var tab_contents = document.getElementsByClassName("tab-contents")
 
+        function dislplayTab(tab){
+        for (tab_link of tab_links){
+            tab_link.classList.remove("active-link");
+        }
+        for(tab_content of tab_contents){
+            tab_content.classList.remove("active");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tab).classList.add("active");
+    }
+
+    </script>
 </body>
 </html>
