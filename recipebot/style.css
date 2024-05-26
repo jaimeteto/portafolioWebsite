@@ -1,0 +1,39 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+h1 {
+    text-align: center;
+}
+.picture {
+    margin-bottom: 20px;
+}
+.picture img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.picture p {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
+.github-link {
+    text-align: center;
+    margin-top: 40px;
+}
+.github-link a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
