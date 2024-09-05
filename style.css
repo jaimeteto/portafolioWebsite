@@ -194,6 +194,34 @@ nav ul li a:hover::before{
     grid-column-start: 1 ;
    
 }
+
+.work4 {
+    background-image: url('images/parts3.png');
+    aspect-ratio: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    
+   
+}
+.work5 {
+    background-image: url('images/mnist1.png');
+    aspect-ratio: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    
+   
+}
+.work6 {
+    background-image: url('images/endpoints1.png');
+    aspect-ratio: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    
+   
+}
 .titles{
     display: flex;
    

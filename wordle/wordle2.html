@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>Wordle App</h1>
+    <div class ="content-container">
+        <div class="slideshow-container">
+
+            <!-- Full-width images -->
+            <div class="slides fade">
+            <img src="../images/welcomeScreen.png" alt="Slide 1">
+            </div>
+        
+            <div class="slides fade">
+            <img src="../images/MainEmpty.png" alt="Slide 2">
+            </div>
+        
+            <div class="slides fade">
+            <img src="../images/wonscreen.png" alt="Slide 3">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            <!-- Dots for navigation -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        </div>
+        
+        
+        <div class="text-content">
+            
+            <p>The app consists of an XML file that defines the user interface—including a 5x5 GridView for word input, a GridView for a virtual keyboard, and Enter and Delete buttons for user interaction—and a Java file that implements the game logic. The Java code handles word selection, input validation, and gameplay flow by comparing the user's guesses to the target word, highlighting correct and incorrect letters, and managing win/loss conditions with alerts. Together, the XML layout structures the app's UI, while the Java code processes </p>
+            
+            <div class="github-link">
+                <i class="fa fa-github" style="font-size:48px"></i>
+                <a href="https://github.com/jaimeteto/project1_Wordle_Android" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+      
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+      
+        // Next/previous controls
+        function changeSlide(n) {
+          showSlides(slideIndex += n);
+        }
+      
+        // Dot controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+      
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("slides");
+          let dots = document.getElementsByClassName("dot");
+          
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          
+          // Hide all slides
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          
+          // Remove the active class from dots
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+      
+          // Display the current slide
+          slides[slideIndex - 1].style.display = "block";
+      
+          // Highlight the current dot
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+      
+</body>
+</html>
