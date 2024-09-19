@@ -45,6 +45,7 @@ main p {
     margin-left: 10%;
     margin-top: 3%;
     color: #161515;
+    font-size: x-large;
     
     
 }
@@ -134,6 +135,7 @@ nav ul li a:hover::before{
 .about h1 {
 
     font-family:'Shadows Into Light',Arial;
+    font-size: large;
     
     
 }
@@ -273,4 +275,18 @@ nav ul li a:hover::before{
 
 .tab-contents ul li span{
     color: #a80808;
+}
+
+#contact {
+    text-align: center;
+    
+}
+#contact ul {
+    list-style-type: none;
+}
+#contact ul li {
+    margin-top: 2%;
+}
+#contact ul i {
+    color: #fcfcfc;
 }

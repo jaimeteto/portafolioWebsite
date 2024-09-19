@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Bot</title>
+    <title>ConnectFour</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Dsicord Recipe Bot</h1>
+    <h1>Conect Four APP</h1>
     <div class ="content-container">
         <div class="slideshow-container">
 
             <!-- Full-width images -->
             <div class="slides fade">
-            <img src="../images/recipebot1.png" alt="Slide 1">
+            <img src="../images/connect4-1.png" alt="Slide 1">
             </div>
         
             <div class="slides fade">
-            <img src="../images/recipebot2.png" alt="Slide 2">
+            <img src="../images/connect4-2.png" alt="Slide 2">
             </div>
         
             <div class="slides fade">
-            <img src="../images/recipebot3.png" alt="Slide 3">
+            <img src="../images/connect4-3.png" alt="Slide 3">
             </div>
+            <div class="slides fade">
+                <img src="../images/connect4-4.png" alt="Slide 3">
+                </div>
         
             <!-- Next and previous buttons -->
             <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
@@ -33,17 +36,21 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
         </div>
         </div>
         
         
         <div class="text-content">
             
-            <p>For this project, I collaborated in a group of three to develop a Discord recipe bot using Python and Selenium WebDriver. The bot scrapes recipes from the web and delivers them directly in a Discord chat. My main contribution was implementing a dynamic categories component with a dropdown menu, allowing users to select options like "desserts" or "vegan." The bot would then instantly return a relevant recipe based on their selection. By combining web scraping, Python automation, and Discord's API, we made it easy for users to quickly find recipes, whether they were craving something specific or working with ingredients they had on hand.</p>
-            
+                <p>This project implements a Connect 4 AI using the Minimax algorithm with Alpha-Beta Pruning, based on code originally provided by a developer on YouTube. However, several modifications and new features have been added to enhance the gameplay and make the AI more challenging.
+
+                    One of the major changes is the winning condition. In the original game, a player wins by connecting four discs in a row (horizontally, vertically, or diagonally). In this modified version, a player wins by filling a 2x2 square with their discs, adding a new strategic element to the game.
+                    
+                    Additionally, new features were introduced to improve the AI's intelligence. The AI difficulty levels were enhanced by implementing a probability-based decision-making system at lower levels. For example, at lower difficulties, there is a chance the AI will make random moves instead of relying purely on the Minimax algorithm, making it less predictable. As the difficulty increases, this randomness decreases, allowing the AI to make more optimal decisions by fully utilizing the Alpha-Beta Pruning feature.</p>            
             <div class="github-link">
                 <i class="fa fa-github" style="font-size:48px"></i>
-                <a href="https://github.com/jaimeteto/recipebot" target="_blank">View on GitHub</a>
+                <a href="https://github.com/jaimeteto/connectFourAlphabeta" target="_blank">View on GitHub</a>
             </div>
         </div>
     </div>

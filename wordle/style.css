@@ -1,120 +1,122 @@
 
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  
 }
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+  max-width: 800px;
+  margin: 5% auto;
+  padding: 0 5%;
 }
 
 /* Container for slideshow and text content */
 .content-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 .picture {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .picture img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 .picture p {
-    text-align: center;
-    font-style: italic;
-    color: #666;
+  text-align: center;
+  font-style: italic;
+  color: #666;
 }
 .github-link {
-    text-align: center;
-    margin-top: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
 .github-link a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
 }
 .slideshow-container {
-    max-width: 200px;
-    position: relative;
-    margin: auto;
-    flex: 1;
-  }
-  .slides {
-    display: none;
-  }
-  .slides img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  /* Next & Previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  .prev {
-    left: 0;
-  }
-  /* Add a fade-in effect */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  @keyframes fade {
-    from {opacity: 0.4;}
-    to {opacity: 1;}
-  }
-  /* Dots */
-  .dots {
-    text-align: center;
-    padding: 20px;
-  }
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  /* Text content styling */
+  max-width: 30%;
+  position: relative;
+  margin: 0 auto;
+  flex: 1;
+}
+.slides {
+  display: none;
+}
+.slides img {
+  width: 100%;
+  border-radius: 5%;
+}
+/* Next & Previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+}
+/* Add a fade-in effect */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+
+}
+/* Dots */
+.dots {
+  text-align: center;
+  padding: 20px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Text content styling */
 .text-content {
-    max-width: 500px; /* Adjust as needed */
-    margin-left: 20px;
-  }
-  
-  .text-content p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
+  max-width: 50%; /* Adjust as needed */
+  margin-left: 3%;
+}
+
+.text-content p {
+  font-size: 90%;
+  line-height: 1.6;
+}

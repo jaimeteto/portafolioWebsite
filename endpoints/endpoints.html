@@ -3,31 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect Four</title>
+    <title>Workout Endpoints</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Connect Four</h1>
-        <div class="picture">
-            <img src="../images/connect4-1.png" alt="Description of Image 1">
-            <p>Description of Image 1</p>
+    <h1>Workout Endpoints</h1>
+    <div class ="content-container">
+        <div class="slideshow-container">
+
+            <!-- Full-width images -->
+            <div class="slides fade">
+            <img src="../images/endpoints2.png" alt="Slide 1">
+            </div>
+        
+            <div class="slides fade">
+            <img src="../images/endpoints1.png" alt="Slide 2">
+            </div>
+        
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            <!-- Dots for navigation -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-        <div class="picture">
-            <img src="../images/connect4-2.png" alt="Description of Image 2">
-            <p>Description of Image 2</p>
         </div>
-        <div class="picture">
-            <img src="../images/connect4-3.png" alt="Description of Image 3">
-            <p>Description of Image 3</p>
-        </div>
-        <div class="picture">
-            <img src="../images/connect4-4.png" alt="Description of Image 4">
-            <p>Description of Image 4</p>
-        </div>
-        <div class="github-link">
-            <a href="https://github.com/jaimeteto/connectFourAlphabeta" target="_blank">View on GitHub</a>
+        
+        
+        <div class="text-content">
+            
+            <p>For this project, I collaborated in a group of three to develop a Discord recipe bot using Python and Selenium WebDriver. The bot scrapes recipes from the web and delivers them directly in a Discord chat. My main contribution was implementing a dynamic categories component with a dropdown menu, allowing users to select options like "desserts" or "vegan." The bot would then instantly return a relevant recipe based on their selection. By combining web scraping, Python automation, and Discord's API, we made it easy for users to quickly find recipes, whether they were craving something specific or working with ingredients they had on hand.</p>
+            
+            <div class="github-link">
+                <i class="fa fa-github" style="font-size:48px"></i>
+                <a href="https://github.com/GMU-SWE432-F22/swe-432-hw2-jaimeteto" target="_blank">View on GitHub</a>
+            </div>
         </div>
     </div>
+      
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+      
+        // Next/previous controls
+        function changeSlide(n) {
+          showSlides(slideIndex += n);
+        }
+      
+        // Dot controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+      
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("slides");
+          let dots = document.getElementsByClassName("dot");
+          
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          
+          // Hide all slides
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          
+          // Remove the active class from dots
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+      
+          // Display the current slide
+          slides[slideIndex - 1].style.display = "block";
+      
+          // Highlight the current dot
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+      
 </body>
 </html>
