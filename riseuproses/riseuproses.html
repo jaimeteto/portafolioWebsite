@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rise Up Roses | Jaime Peña</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Jaime Peña</div>
+      <nav>
+        <ul>
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#internships">Internships</a></li>
+          <li><a href="../index.html#projectlist">Projects</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="detail-page">
+    <div class="detail-container">
+
+      <div class="detail-hero" data-aos="fade-up">
+        <div class="detail-logo">
+          <img src="../images/riseuproses.png" alt="Rise Up Roses Logo" />
+        </div>
+
+        <div>
+          <p class="detail-label">Internship Experience</p>
+          <h1>Rise Up Roses</h1>
+          <h2>Web Developer Intern</h2>
+
+          <a href="https://riseuproses.org" target="_blank" class="btn">
+            Visit Organization
+          </a>
+        </div>
+      </div>
+
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Overview</h3>
+        <p>
+          At Rise Up Roses, I worked on improving the nonprofit’s website and digital
+          presence. My role included both design and development work, helping create
+          a better experience for visitors while supporting the organization’s mission
+          through a clearer and more effective website.
+        </p>
+      </div>
+
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Tech Stack</h3>
+        <p>
+          WordPress, Figma, HTML, CSS, plugin configuration, website content management
+        </p>
+      </div>
+
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Key Contributions</h3>
+        <ul class="detail-list">
+          <li>Updated and improved website pages to make them more user-friendly</li>
+          <li>Created wireframes and design ideas in Figma before implementation</li>
+          <li>Worked on adding new features and improving layout consistency</li>
+          <li>Helped align the site structure with the organization’s goals and audience</li>
+          <li>Contributed to making the site feel more modern, organized, and easier to navigate</li>
+        </ul>
+      </div>
+
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Challenges & Problem Solving</h3>
+        <p>
+          One challenge was balancing design improvements with the practical limits of the
+          site’s existing setup. I had to think about usability, responsiveness, and content
+          clarity while working within WordPress tools and plugin-based workflows. This helped
+          me better understand how to make design decisions that are both realistic and impactful.
+        </p>
+      </div>
+
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Work Samples</h3>
+
+        <div class="carousel">
+          <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+
+          <div class="carousel-track">
+            <div class="carousel-slide active">
+              <img src="../images/riseuproses.png" alt="Rise Up Roses sample 1" />
+              <p class="carousel-caption">
+                Example of a page layout or section redesign created to improve clarity and user flow.
+              </p>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="../images/TANTV.png" alt="Rise Up Roses sample 2" />
+              <p class="carousel-caption">
+                Wireframe or visual planning work used to guide design and content updates.
+              </p>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="../images/KWF.png" alt="Rise Up Roses sample 3" />
+              <p class="carousel-caption">
+                Updated website section showing a cleaner structure and stronger presentation.
+              </p>
+            </div>
+          </div>
+
+          <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+        </div>
+      </div>
+
+      <div class="detail-card" data-aos="fade-up">
+        <h3>What I Learned</h3>
+        <p>
+          This internship helped me understand how web development can directly support a
+          mission-driven organization. I improved my ability to think about design, usability,
+          and content structure together while building solutions that are both practical and
+          meaningful.
+        </p>
+      </div>
+
+      <div class="detail-actions">
+        <a href="../index.html#internships" class="btn btn-outline">
+          Back to Internships
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    let currentSlide = 0;
+
+    function moveSlide(direction) {
+      const slides = document.querySelectorAll(".carousel-slide");
+
+      slides[currentSlide].classList.remove("active");
+      currentSlide += direction;
+
+      if (currentSlide < 0) currentSlide = slides.length - 1;
+      if (currentSlide >= slides.length) currentSlide = 0;
+
+      slides[currentSlide].classList.add("active");
+    }
+  </script>
+
+</body>
+</html>

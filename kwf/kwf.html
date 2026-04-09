@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kashmir World Foundation | Jaime Peña</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Jaime Peña</div>
+      <nav>
+        <ul>
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#internships">Internships</a></li>
+          <li><a href="../index.html#projectlist">Projects</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="detail-page">
+    <div class="detail-container">
+
+      <!-- HERO -->
+      <div class="detail-hero" data-aos="fade-up">
+        <div class="detail-logo">
+          <img src="../images/KWF.png" alt="KWF Logo" />
+        </div>
+
+        <div>
+          <p class="detail-label">Internship Experience</p>
+          <h1>Kashmir World Foundation</h1>
+          <h2>Software Engineering Intern / Team Lead</h2>
+          <h3>June 2025 – September 2025</h3>
+
+          <a href="https://kashmirworldfoundation.org" target="_blank" class="btn">
+            Visit Organization
+          </a>
+        </div>
+      </div>
+
+      <!-- OVERVIEW -->
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Overview</h3>
+        <p>
+          Kashmir World Foundation is a nonprofit organization focused on conservation through technology and research. During my internship, 
+          I contributed to the development of software tools used by researchers to collect and analyze environmental data in the field. 
+          My work focused on building features across both mobile and desktop platforms, improving data reliability,
+           and designing a syncing system that works without constant internet access.
+        </p>
+
+
+      <!-- TECH STACK -->
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Tech Stack</h3>
+        <p>
+          React Native, Expo, TypeScript, SQLite (Drizzle ORM), Electron, Node.js,
+          REST APIs, GitHub, Figma
+        </p>
+      </div>
+
+      <!-- CONTRIBUTIONS -->
+      <div class="detail-card" data-aos="fade-up">
+        <h3>My Role</h3>
+        <ul class="detail-list">
+          <li>Worked on mobile and desktop applications used for research data collection</li>
+          <li>Helped design and implement syncing workflows between mobile and desktop systems</li>
+          <li>Contributed to building offline-first features for use in remote environments</li>
+          <li>Collaborated with team members on architecture and feature decisions</li>
+          <li>Took on leadership responsibilities, helping guide parts of development</li>
+        </ul>
+      </div>
+
+      <!-- CHALLENGES -->
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Challenges & Problem Solving</h3>
+        <p>
+          One of the main challenges was ensuring reliable data syncing between
+          mobile and desktop applications, especially in offline scenarios.
+          I worked on improving how data was structured and transferred, helping
+          ensure consistency and reliability across systems. This required thinking
+          carefully about edge cases like conflicts, timestamps, and missing data.
+        </p>
+      </div>
+
+      <!-- IMAGES -->
+      <div class="detail-card" data-aos="fade-up">
+  <h3>Work Samples</h3>
+
+  <div class="carousel">
+    <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+
+    <div class="carousel-track">
+      <div class="carousel-slide active">
+        <img src="kwf1.png" />
+        <p class="carousel-caption">
+          Mobile app interface used for recording and managing field data.
+        </p>
+      </div>
+
+      <div class="carousel-slide">
+        <img src="kwf2.png" />
+        <p class="carousel-caption">
+          Desktop portal used to visualize and manage collected data.
+        </p>
+      </div>
+
+      <div class="carousel-slide">
+        <img src="kwf3.png" />
+        <p class="carousel-caption">
+          Syncing workflow between mobile and desktop applications.
+        </p>
+      </div>
+    </div>
+
+    <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+  </div>
+</div>
+
+      <!-- LEARNINGS -->
+      <div class="detail-card" data-aos="fade-up">
+        <h3>What I Learned</h3>
+        <p>
+          This experience helped me grow both technically and as a leader. I learned
+          how to design systems that work in real-world conditions, think through
+          data consistency challenges, and collaborate effectively on a complex project.
+          It also gave me experience working on software that directly supports
+          research and environmental impact.
+        </p>
+      </div>
+
+      <!-- BACK BUTTON -->
+      <div class="detail-actions">
+        <a href="../index.html#internships" class="btn btn-outline">
+          Back to Internships
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
+<script>
+let currentSlide = 0;
+
+function moveSlide(direction) {
+  const slides = document.querySelectorAll(".carousel-slide");
+
+  slides[currentSlide].classList.remove("active");
+
+  currentSlide += direction;
+
+  if (currentSlide < 0) currentSlide = slides.length - 1;
+  if (currentSlide >= slides.length) currentSlide = 0;
+
+  slides[currentSlide].classList.add("active");
+}
+</script>

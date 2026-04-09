@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TANTV | Jaime Peña</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Jaime Peña</div>
+      <nav>
+        <ul>
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#internships">Internships</a></li>
+          <li><a href="../index.html#projectlist">Projects</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="detail-page">
+    <div class="detail-container">
+
+      <div class="detail-hero" data-aos="fade-up">
+        <div class="detail-logo">
+          <img src="../images/TANTV.png" alt="TANTV Logo" />
+        </div>
+
+        <div>
+          <p class="detail-label">Internship Experience</p>
+          <h1>TANTV</h1>
+          <h2>Frontend Development Intern</h2>
+
+          <a href="https://www.tantvnews.com/" target="_blank" class="btn">
+            Visit Organization
+          </a>
+        </div>
+      </div>
+
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Overview</h3>
+        <p>
+          At TANTV, I worked on the frontend of a news platform using modern web
+          technologies. My role focused on building user-facing features, improving
+          authentication flows, and collaborating with backend developers to support
+          a smoother and more reliable user experience.
+        </p>
+      </div>
+
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Tech Stack</h3>
+        <p>
+          TypeScript, Next.js, Tailwind CSS, NextAuth, frontend API integration, GitHub
+        </p>
+      </div>
+
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Key Contributions</h3>
+        <ul class="detail-list">
+          <li>Built and improved frontend features using TypeScript, Next.js, and Tailwind CSS</li>
+          <li>Worked on user authentication and session management</li>
+          <li>Collaborated with backend developers to connect frontend components with APIs</li>
+          <li>Helped implement Google and Facebook sign-in functionality</li>
+          <li>Improved responsiveness and usability across parts of the platform</li>
+        </ul>
+      </div>
+
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Challenges & Problem Solving</h3>
+        <p>
+          One of the key challenges was working on authentication flows that had to be both
+          smooth for users and technically reliable. I learned how to think through frontend
+          behavior, session handling, and integration details while making sure the experience
+          remained clean and easy to use.
+        </p>
+      </div>
+
+      <div class="detail-card" data-aos="fade-up">
+        <h3>Work Samples</h3>
+
+        
+
+      <div class="detail-card" data-aos="fade-up">
+        <h3>What I Learned</h3>
+        <p>
+          This internship strengthened my frontend development skills in a real product
+          environment. I gained experience building polished UI, integrating with backend
+          systems, and working on authentication features that are common in modern web apps.
+        </p>
+      </div>
+
+      <div class="detail-actions">
+        <a href="../index.html#internships" class="btn btn-outline">
+          Back to Internships
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    let currentSlide = 0;
+
+    function moveSlide(direction) {
+      const slides = document.querySelectorAll(".carousel-slide");
+
+      slides[currentSlide].classList.remove("active");
+      currentSlide += direction;
+
+      if (currentSlide < 0) currentSlide = slides.length - 1;
+      if (currentSlide >= slides.length) currentSlide = 0;
+
+      slides[currentSlide].classList.add("active");
+    }
+  </script>
+
+</body>
+</html>

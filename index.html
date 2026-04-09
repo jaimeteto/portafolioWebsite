@@ -1,205 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaime Pena Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Shadows+Into+Light">
-  <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Tangerine">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaime Pena Portfolio</title>
 
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
 
-    
-        <div class="container">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projectlist">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        </div>
-    
-    <main>
-        <section id="home" >
-            <div class ="containerMain">
-                <div class = "col-2-main">
-                    <h1 data-aos="flip-up" data-aos-duration="1000">Jaime Peña</h1>
-                    <p>I'm an aspiring software engineer driven by a strong work ethic, a strong belief in making customers' needs the top priority and  a deep commitment  to continuous learning.</p>
-                </div>
-                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="myPicture">
-                    <img src="images/jaime.PNG" alt="Jaime's Picture" >
-                </div>
-                
-                
-            </div>
-        </section>
-        
-
-        
-        
-    </main>
-    <section id = about>
-        <div class="about-container">
-            <div class = "about">
-                <div data-aos="fade-down" data-aos-duration="1000"><h1>About</h1></div>
-                <div data-aos="fade-up" class="about-paragraph"><p>
-                    I am a first-generation college student from El Salvador, currently pursuing my dream of becoming a software engineer and making my family proud. With a full-time role at a collision repair shop, I specialize in painting cars, a field where I have excelled. However, my true passion lies in the ever-evolving world of software engineering. I'm deeply fascinated by all aspects of the technology industry and am fully committed to bridging the gap between my current career and my aspirations in software development. As I transition into this exciting new field, I am determined to replicate the success I've achieved in my previous career.   
-                </p></div>
-                
-            </div>
-        </div>
-        <div class="titles_container">
-            <div data-aos="fade-down" data-aos-duration="1000" class="titles">
-                <p class="tab_links active-link" onclick="dislplayTab('education')">Education</p>
-                <p class="tab_links"onclick="dislplayTab('skills')">Skills</p>
-                <p class="tab_links"onclick="dislplayTab('development')">Professional Development</p>
-
-            </div>
-            <div data-aos="fade-up" class="tab-contents active" id="education">
-                <ul>
-                    <li><span>BS Computer Science</span><br>George Mason University(Decemeber 2023)</li>
-                    <li><span>MS Software Engineering</span><br>George Mason University(May 2025)</li>
-                </ul>
-
-            </div>
-            <div data-aos="fade-up" class="tab-contents" id="skills">
-                <ul>
-                    <li><span>Programming Languages</span><br>(JavaScript,python,Java,SQL)</li>
-                    <li><span>Frameworks and Libraries</span><br>Node.js, React.js,Firebase,Android Studio</li>
-                    <li><span>DataBases</span><br>SQL</li>
-                    
-                </ul>
-
-            </div>
-            <div data-aos="fade-up" class="tab-contents" id="development">
-                <ul>
-                    <li><span>CodePath</span><br></li>
-                    <li><span>Fall 2023 GMU Hackthon</span><br></li>
-                </ul>
-
-            </div>
-        </div>
-        
-    </section>
-    
-    <section id="projectlist">
-        <div class="projectsSection" div data-aos="fade-down" data-aos-duration="1000">
-            <div><h1>PROJECTS</h1></div>
-            <div class="projectList">
-            <a href="./wordle/wordle2.html"style="text-decoration: none; color: white;">
-                <div data-aos="fade-right"class="layer">
-                    <div class="work1">
-                    </div>
-                    <h3>Wordle APP</h3>
-                    <p>This project is an Android-based version of the popular Wordle game, developed using Java and Android Studio. The app allows users to guess a five-letter word within six attempts, following the standard Wordle rules. After each guess, letters change color to indicate how close the player is to the correct word—green for correct letters in the right position, yellow for correct letters in the wrong position, and gray for incorrect letters.</p>
-                </div>
-            </a>
-            <a href="./recipebot/recipebot.html"style="text-decoration: none; color: white;">
-                <div data-aos="fade-left" class="layer">
-                    <div class="work2">
-                    </div>
-                    <h3>Recipe Discord Bot</h3>
-                    <p>Discord bot that scrapes recipes from the web and responds with a recipe in seconds. implemented using python</p>
-                </div>
-            </a>
-            <a href="./partsApp/partsApp2.html"style="text-decoration: none; color: white;">
-                <div data-aos="fade-right" class="layer">
-                    <div class="work4">
-                    </div>
-                    <h3>Parts Inventory APP</h3>
-                    <p>Connect four game implemented using python and MinMax algorithm with Alpha-Beta pruning </p>
-                </div>
-                
-            </a>
-            <a href="./connectFour/connectFour2.html"style="text-decoration: none; color: white;">
-                <div data-aos="fade-left" class="layer">
-                    <div class="work3">
-                    </div>
-                    <h3>Connect Four Python Game</h3>
-                    <p>Connect four game implemented using python and MinMax algorithm with Alpha-Beta pruning </p>
-                </div>
-                
-            </a>
-            <a href="./mnist/mnist.html"style="text-decoration: none; color: white;">
-                <div data-aos="fade-right" class="layer">
-                    <div class="work5">
-                    </div>
-                    <h3>MNIST HAND WRITTEN DIGITS CLASSIFIER</h3>
-                    <p>Enhanced Handwritten Digit Classification in Python using Neural Networks</p>
-                </div>
-                
-            </a>
-            <a href="./endpoints/endpoints.html"style="text-decoration: none; color: white;">
-                <div data-aos="fade-left" class="layer">
-                    <div class="work6">
-                    </div>
-                    <h3>WORKOUT ENDPOINTS</h3>
-                    <p>Created API endpoints that deliver categorized workout routines, such as "in the gym" or "no equipment," providing users with tailored exercise plans based on their available resources and environment.</p>
-                </div>
-                
-            </a>
-            
-            </div>
-        
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>If you have any questions or feedback, feel free to reach out to me through the following:</p>
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Jaime Peña</div>
+      <nav>
         <ul>
-          <li><strong>Email:</strong> <a href="mailto:jaime.teto@gmail.com " target="_blank">
-            <i class="fa fa-envelope" style="font-size: 48px; margin-left: 5px;"></i>
-          </a></li>
-          <li><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/jaime-pena-arce/">
-            <i class="fa fa-linkedin" style="font-size: 48px; margin-left: 5px;"></i></a></li>
-
-          <li>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/jaimeteto" target="_blank">
-            <i class="fa fa-github" style="font-size: 48px; margin-left: 5px;"></i>
-    
-      </a>
-          </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#internships">Internships</a></li>
+          <li><a href="#projectlist">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </section>
-    
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home">
+      <div class="containerMain">
+        <div class="col-2-main" data-aos="fade-right" data-aos-duration="1200">
+          <h1>Jaime Peña</h1>
+          <h2>Full-Stack Software Engineer</h2>
+          <p class="hero-description">
+            I build responsive web and mobile applications using React, Node.js,
+            Java, Python, and modern development tools. I enjoy solving real-world
+            problems and creating clean, practical user experiences.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projectlist" class="btn">View Internships</a>
+            <a href="#internships" class="btn btn-outline">View Projects</a>
+          </div>
+        </div>
+
+        <div class="myPicture" data-aos="fade-left" data-aos-duration="1200">
+          <img src="images/jaime.PNG" alt="Jaime's Picture" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-container">
+        <div class="about" data-aos="fade-down" data-aos-duration="1000">
+          <h1>About</h1>
+          <p class="about-paragraph">
+            I am a first-generation college student from El Salvador with a strong passion
+            for software engineering and problem solving. After years of working full-time
+            in collision repair, I committed myself to transitioning into tech and pursuing
+            the dream of becoming a software engineer. My background has shaped me into a
+            resilient, disciplined, and hardworking developer who values continuous learning
+            and building meaningful software.
+          </p>
+        </div>
+      </div>
+
+      <div class="titles_container">
+        <div class="titles" data-aos="fade-down" data-aos-duration="1000">
+          <p class="tab_links active-link" onclick="displayTab(event, 'education')">Education</p>
+          <p class="tab_links" onclick="displayTab(event, 'skills')">Skills</p>
+          <p class="tab_links" onclick="displayTab(event, 'development')">Professional Development</p>
+        </div>
+
+        <div data-aos="fade-up" class="tab-contents active" id="education">
+          <ul>
+            <li><span>BS Computer Science</span><br />George Mason University (December 2023)</li>
+            <li><span>MS Software Engineering</span><br />George Mason University (May 2025)</li>
+          </ul>
+        </div>
+
+        <div data-aos="fade-up" class="tab-contents" id="skills">
+          <ul>
+            <li><span>Programming Languages</span><br />JavaScript, Python, Java, SQL, TypeScript</li>
+            <li><span>Frameworks & Libraries</span><br />React.js, Node.js, Express.js, Firebase, Android Studio, React Native, Next.js, Electron</li>
+            <li><span>Databases</span><br />SQL, SQLite,Drizzle ORM</li>
+            <li><span>Tools</span><br />Git, GitHub, AWS S3, Figma, Jenkins, Rancher</li>
+          </ul>
+        </div>
+
+        <div data-aos="fade-up" class="tab-contents" id="development">
+          <ul>
+            <li><span>CodePath</span><br />Technical interview preparation and software engineering development</li>
+            <li><span>Fall 2023 GMU Hackathon</span><br />Collaborative software development in a fast-paced environment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERNSHIPS -->
+    <section id="internships">
+  <div class="section-title" data-aos="fade-down" data-aos-duration="1000">
+    <h1>Experience</h1>
+  </div>
+
+  <div class="internship-grid">
+    <a href="./kwf/kwf.html" class="internship-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="internship-logo">
+        <img src="images/KWF.png" alt="Kashmir World Foundation Logo Placeholder" />
+      </div>
+      <h3>Kashmir World Foundation</h3>
+      <p class="role">Software Engineering Intern / Team Lead</p>
+      <p>
+        Contributed to research-focused software for field data collection.
+        Worked on syncing workflows, mobile and desktop application features,
+        and helped lead parts of the project through technical decision making
+        and collaboration.
+      </p>
+      <span class="learn-more">Learn More</span>
+    </a>
+    <a href="./tantv/tantv.html" class="internship-card" data-aos="fade-up">
+      <div class="internship-logo">
+        <img src="images/TANTV.png" alt="TANTV Logo Placeholder" />
+      </div>
+      <h3>TANTV</h3>
+      <p class="role">Frontend Development Intern</p>
+      <p>
+        Worked on the frontend of a news platform using TypeScript, Next.js,
+        and Tailwind CSS. Helped implement authentication, session management,
+        and social sign-in features while collaborating closely with backend developers.
+      </p>
+      <span class="learn-more">Learn More</span>
+    </a>
+
+    <a href="./riseuproses/riseuproses.html" class="internship-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="internship-logo">
+        <img src="images/riseuproses.png" alt="Rise Up Roses Logo Placeholder" />
+      </div>
+      <h3>Rise Up Roses</h3>
+      <p class="role">Web Developer Intern</p>
+      <p>
+        Managed and improved the organization’s website using WordPress and Figma.
+        Worked on wireframes, feature updates, and design improvements to better support
+        the nonprofit’s mission and user needs.
+      </p>
+      <span class="learn-more">Learn More</span>
+    </a>
 
     
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script>
-        var tab_links = document.getElementsByClassName("tab_links")
-        var tab_contents = document.getElementsByClassName("tab-contents")
+    <!-- PROJECTS -->
+    <section id="projectlist">
+      <div class="projectsSection" data-aos="fade-down" data-aos-duration="1000">
+        <div class="section-title">
+          <h1>Projects</h1>
+        </div>
 
-        function dislplayTab(tab){
-        for (tab_link of tab_links){
-            tab_link.classList.remove("active-link");
-        }
-        for(tab_content of tab_contents){
-            tab_content.classList.remove("active");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tab).classList.add("active");
+        <div class="projectList">
+          <a href="./wordle/wordle2.html" class="project-card" data-aos="fade-up">
+            <div class="project-image work1"></div>
+            <div class="project-content">
+              <h3>Wordle App</h3>
+              <p>
+                Android-based Wordle game built with Java and Android Studio.
+                Players guess a five-letter word with color feedback after each try.
+              </p>
+            </div>
+          </a>
+
+          <a href="./recipebot/recipebot.html" class="project-card" data-aos="fade-up">
+            <div class="project-image work2"></div>
+            <div class="project-content">
+              <h3>Recipe Discord Bot</h3>
+              <p>
+                Python Discord bot that scrapes recipes from the web and returns
+                recipe suggestions quickly based on user input.
+              </p>
+            </div>
+          </a>
+
+          <a href="./partsApp/partsApp2.html" class="project-card" data-aos="fade-up">
+            <div class="project-image work4"></div>
+            <div class="project-content">
+              <h3>Parts Inventory App</h3>
+              <p>
+                Inventory management application designed to help organize parts
+                efficiently in a real-world work environment.
+              </p>
+            </div>
+          </a>
+
+          <a href="./connectFour/connectFour2.html" class="project-card" data-aos="fade-up">
+            <div class="project-image work3"></div>
+            <div class="project-content">
+              <h3>Connect Four Python Game</h3>
+              <p>
+                Connect Four game built in Python using Minimax with Alpha-Beta pruning
+                to create a smarter AI opponent.
+              </p>
+            </div>
+          </a>
+
+          <a href="./mnist/mnist.html" class="project-card" data-aos="fade-up">
+            <div class="project-image work5"></div>
+            <div class="project-content">
+              <h3>MNIST Handwritten Digits Classifier</h3>
+              <p>
+                Neural network project in Python focused on improving handwritten
+                digit classification on the MNIST dataset.
+              </p>
+            </div>
+          </a>
+
+          <a href="./dentsdamage/dentsdamage.html" class="project-card" data-aos="fade-up">
+            <div class="project-image work6"></div>
+            <div class="project-content">
+              <h3>Dents and Damage Detection</h3>
+              <p>
+                Computer vision project focused on identifying dents and vehicle damage from images.
+                Built to explore how software can help automate damage assessment and improve inspection workflows.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-title" data-aos="fade-down">
+        <h1>Contact</h1>
+      </div>
+
+      <div class="contact-grid" data-aos="fade-up">
+        <a href="mailto:jaime.teto@gmail.com" target="_blank" class="contact-card">
+          <i class="fa fa-envelope"></i>
+          <span>Email</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/jaime-pena-arce/" target="_blank" class="contact-card">
+          <i class="fa fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/jaimeteto" target="_blank" class="contact-card">
+          <i class="fa fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jaime Peña. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function displayTab(event, tab) {
+      const tabLinks = document.getElementsByClassName("tab_links");
+      const tabContents = document.getElementsByClassName("tab-contents");
+
+      for (let tabLink of tabLinks) {
+        tabLink.classList.remove("active-link");
+      }
+
+      for (let tabContent of tabContents) {
+        tabContent.classList.remove("active");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tab).classList.add("active");
     }
-
-    </script>
+  </script>
 </body>
 </html>
